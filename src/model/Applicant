@@ -1,0 +1,36 @@
+package model;
+
+import java.util.Scanner;
+import java.util.TreeMap;
+
+import Database.EnquiryRepository;
+import controller.ProjectController;
+import controller.EnquiryController;
+import controller.ApplicationController;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.InputMismatchException;
+import java.util.List;
+import java.util.Map;
+
+import java.util.Scanner;
+
+public class Applicant extends User{
+	
+	private String flatTypeBooked = "";
+	
+	public Applicant(String name, String nric, int age, String maritalStatus, String password) {
+		super(name, nric, age, maritalStatus, password);
+	}
+	
+	public String getflatTypeBooked() {
+		return flatTypeBooked;
+	}
+	
+	public void setflatTypeBooked(String newFlatType) {
+		this.flatTypeBooked = newFlatType;
+	}
+	
+}
